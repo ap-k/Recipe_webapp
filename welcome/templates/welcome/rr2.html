@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'welcome/style1.css' %} "/>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script language="JavaScript">
+        function check() {
+
+                alert("Choose atleast one ingredient");
+        }
+    </script>
+</head>
+<body>
+
+<br>
+<br>
+<br>
+    <h1 style="font-family: 'Jokerman'"><center><i><b> SELECT YOUR INGREDIENTS</b></i></center></h1>
+    <br>
+    <br>
+    <br>
+<form ACTION="rshow" METHOD="post">{% csrf_token %}
+    <center><h1 style="font-family: 'Jokerman'"><i><b> <input type="checkbox" name="ing" value="Milk"/> Milk <br></b></i></h1></center>
+    <center><h1 style="font-family: 'Jokerman'"><i><b> <input type="checkbox" name="ing" value="Chocolate Syrup"/>Chocolate Syrup<br></b></i></h1></center>
+    <center><h1 style="font-family: 'Jokerman'"><i><b> <input type="checkbox" name="ing" value="Mango"/> Mango<br></b></i></h1></center>
+    <center><h1 style="font-family: 'Jokerman'"><i><b> <input type="checkbox" name="ing" value="Lemon"/> Lemon<br></b></i></h1></center>
+    <center><h1 style="font-family: 'Jokerman'"><i><b> <input type="checkbox" name="ing" value="Orange"/> Orange<br></b></i></h1></center>
+    <br>
+
+    <center><h1><i><b> <a href="rshow"> <input type="submit" class="button1" value="Get recipes" onsubmit="check()"></a></b></i></h1></center>
+</form>
+
+</body>
+</html>

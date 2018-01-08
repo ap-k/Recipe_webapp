@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'welcome/style2.css' %} "/>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<br>
+<br>
+<h1 style="font-family: 'Jokerman'"><center><i><b>SELECT YOUR INGREDIENTS</b></i></center></h1>
+<form ACTION="rshow2" METHOD="post">{% csrf_token %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <center><h1 style="font-family: 'Jokerman'"><i><b> <input type="checkbox" name="ing" value="Pasta"/>  Pasta       <br></b></i></h1></center>
+    <center><h1 style="font-family: 'Jokerman'"><i><b> <input type="checkbox" name="ing" value="Paneer"/>  Paneer     <br></b></i></h1></center>
+    <center><h1 style="font-family: 'Jokerman'"><i><b> <input type="checkbox" name="ing" value="Tomato"/>  Tomato     <br></b></i></h1></center>
+    <center><h1 style="font-family: 'Jokerman'"><i><b> <input type="checkbox" name="ing" value="Onion"/>  Onion       <br></b></i></h1></center>
+    <center><h1 style="font-family: 'Jokerman'"><i><b> <input type="checkbox" name="ing" value="Potato"/>  Potato     <br></b></i></h1></center><br>
+
+
+    <center><h1><i><b> <a href="rshow2"> <input type="submit" class="button2" value="Get recipes" ></a> </b></i></h1></center>
+
+</form>
+</body>
+</html>

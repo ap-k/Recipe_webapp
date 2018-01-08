@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'welcome/stylem.css' %} "/>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe page</title>
+    <style>
+        a:link {
+            color: white;
+        }
+        a:visited{
+            color: white;
+        }
+        a:hover{
+            color: deepskyblue;
+        }
+        a:active{
+            color: deepskyblue;
+        }
+    </style>
+</head>
+<body bgcolor="black" text="white">
+<IMG align="right" HEIGHT="725" src="{% static 'welcome/images/images6.jpg' %}" WIDTH="1000">
+<br/>
+{% if messages %}
+    {% for message in messages %}
+    <div{% if message.tags %} class="alert alert-{{ message.tags }}"{% endif %}>
+    <a class="close" data-dismiss="alert" href="rr2.html">&times;</a>
+    {{ message }}
+    </div>
+    {% endfor %}
+
+
+
+{% else %}
+                <i><h1>You can cook:</h1></i>
+       {% for i in p %}
+           {% if i.recipe_name == "null" %}
+               <center><h1><b><i> OOPS! No recipe is available for this combination! </i></b></h1></center>
+           {% else %}
+
+               <i><h2> <a href="{{ i.recipe_link }}">{{ i.recipe_name }}</a> </h2></i>
+
+           {% endif %}
+       {% endfor %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h1><i><b> <a href="index1"> <input type="submit" class="button5" value="Back to category" ></a></b></i></h1>
+{% endif %}
+</body>
+</html>
