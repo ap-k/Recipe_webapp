@@ -1,0 +1,18 @@
+body{
+    background-image: url("images/bev3.jpg");
+    background-position: center;
+    background-size: 1855px;
+    background-repeat: no-repeat;
+}
+.button3{
+    display: inline-block;
+    font-size: 28px;
+    text-align: justify;
+    text-decoration: blink;
+    outline: none;
+    color: maroon;
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
+    box-shadow: darkgrey;
+}

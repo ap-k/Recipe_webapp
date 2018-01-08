@@ -1,0 +1,17 @@
+body{
+    background-image: url("images/bev6.jpg");
+    background-position: center;
+    background-size: 1852px;
+    background-repeat: no-repeat;
+}
+.button1{
+    display: inline-block;
+    font-size: 28px;
+    text-align: justify;
+    text-decoration: blink;
+    color: darkred;
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
+    box-shadow: darkgrey;
+}

@@ -1,0 +1,16 @@
+.button5{
+    display: inline-block;
+    font-size: 20px;
+    text-align: justify;
+    text-decoration: blink;
+    outline: none;
+    color: maroon;
+    background-color: pink;
+    border: none;
+    border-radius: 360px;
+    box-shadow: darkgrey;
+    margin: 8px;
+}
+h1{
+    font-family: "Jokerman";
+}

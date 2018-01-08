@@ -1,0 +1,16 @@
+
+.button{
+    display: inline-block;
+    font-size: 38px;
+    text-align: justify;
+    text-decoration: blink;
+    outline: none;
+    color: black ;
+    background-color: white;
+    border: none;
+    border-radius: 40px;
+    box-shadow: darkgrey;
+    margin: 10px 45px;
+}
+
+
